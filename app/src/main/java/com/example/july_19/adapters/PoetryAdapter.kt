@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.july_19.R
 import com.example.july_19.model.Poetry
-import okhttp3.internal.notify
 
 class PoetryAdapter(private var poetry: List<Poetry>): RecyclerView.Adapter<PoetryAdapter.PoetryViewHolder>() {
 
