@@ -21,7 +21,7 @@ class PoetryViewModel : ViewModel() {
             try {
                 _poetry.value = repository.getPoetry()
             } catch (e: Exception) {
-                error(e)
+               // error(e)
             }
         }
     }

@@ -18,11 +18,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setAdapter()
+
         viewModel = ViewModelProvider(this)[PoetryViewModel::class.java]
+
+
+
+    }
+
+    override fun onStart() {
+        setAdapter()
         getPoetry()
         viewModel.getPoetry()
-
+        super.onStart()
     }
 
     private fun setAdapter() {
@@ -35,8 +42,9 @@ class MainActivity : AppCompatActivity() {
         viewModel.poetry.observe(this) { poetry ->
             if (poetry.isNotEmpty()) {
                 poetryAdapter.setPoetry(poetry)
+                binding.Loader.visibility = View.GONE
             } else {
-                binding.Loader.visibility = View.VISIBLE
+
             }
         }
     }
