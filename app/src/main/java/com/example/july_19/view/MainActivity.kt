@@ -21,8 +21,6 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this)[PoetryViewModel::class.java]
 
-
-
     }
 
     override fun onStart() {
@@ -44,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 poetryAdapter.setPoetry(poetry)
                 binding.Loader.visibility = View.GONE
             } else {
-
+                //
             }
         }
     }
