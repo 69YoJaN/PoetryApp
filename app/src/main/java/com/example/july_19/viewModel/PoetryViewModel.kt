@@ -35,8 +35,7 @@ class PoetryViewModel : ViewModel() {
     fun createUser(user: User) {
         viewModelScope.launch {
             (Dispatchers.IO) {
-                repository.createUser(user) {
-                        createUser ->
+                repository.createUser(user) { createUser ->
                     _userResponse.postValue(createUser)
                 }
             }
