@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/getAPiFragment">
+
+    <fragment
+        android:id="@+id/getAPiFragment"
+        android:name="com.example.july_19.view.get.GetAPiFragment"
+        android:label="fragment_get_a_pi"
+        tools:layout="@layout/fragment_get_a_pi" />
+    <fragment
+        android:id="@+id/postAPiFragment"
+        android:name="com.example.july_19.view.post.PostAPiFragment"
+        android:label="fragment_post_a_pi"
+        tools:layout="@layout/fragment_post_a_pi" />
+    <fragment
+        android:id="@+id/patchAPiFragment"
+        android:name="com.example.july_19.view.patch.PatchAPiFragment"
+        android:label="fragment_patch_a_pi"
+        tools:layout="@layout/fragment_patch_a_pi" />
+    <fragment
+        android:id="@+id/deleteAPiFragment"
+        android:name="com.example.july_19.view.delete.DeleteAPiFragment"
+        android:label="fragment_delete_a_pi"
+        tools:layout="@layout/fragment_delete_a_pi" />
+    <fragment
+        android:id="@+id/putAPiFragment"
+        android:name="com.example.july_19.view.put.PutAPiFragment"
+        android:label="fragment_put_a_pi"
+        tools:layout="@layout/fragment_put_a_pi" />
+</navigation>

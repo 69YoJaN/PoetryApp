@@ -1,0 +1,25 @@
+package com.example.july_19.view.delete
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import com.example.july_19.databinding.FragmentDeleteAPiBinding
+
+class DeleteAPiFragment : Fragment() {
+    private lateinit var binding: FragmentDeleteAPiBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentDeleteAPiBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+    }
+
+}

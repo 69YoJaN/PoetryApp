@@ -12,4 +12,16 @@
     <string name="name">Name</string>
     <string name="hard_disk_size">Hard Disk Size</string>
     <string name="submit">submit</string>
+    <string name="post">Post</string>
+    <string name="formTitle">Form Title</string>
+    <string name="job">Job</string>
+    <string name="createdAt">CreatedAt</string>
+    <string name="id">Id</string>
+    <string name="Delete">Delete</string>
+    <string name="put">Put</string>
+    <string name="patch">Patch</string>
+    <string name="get">Get</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>

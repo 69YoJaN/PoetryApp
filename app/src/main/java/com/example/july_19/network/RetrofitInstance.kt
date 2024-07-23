@@ -7,6 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitInstance {
     private const val BASE_URL = "https://poetrydb.org"
+    private const val DEMO_URL = "https://reqres.in/"
 
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
@@ -23,5 +24,14 @@ object RetrofitInstance {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ApiService::class.java)
+    }
+
+    val restAPIDemo : RestAPIDemo by lazy {
+        Retrofit.Builder()
+            .baseUrl(DEMO_URL)
+            .client(client)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(RestAPIDemo::class.java)
     }
 }
